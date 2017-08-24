@@ -16,6 +16,8 @@
 	<img src="images/logo.jpg"/>
 	<a href="<%=request.getContextPath() %>/index.jsp">메인으로 가기</a>
 	<form method="post" action="/helloweb/join">
+		<input type="hidden" name="type" value="나쁜놈"/>
+		
 		이메일: <input type="text" name="email" value=""/>
 		<br/><br/>
 	

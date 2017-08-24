@@ -17,7 +17,10 @@ public class JoinServlet extends HttpServlet {
 		// post 방식으로 데이터를 전달 받는 경우
 		// encoding charset를 지정.
 		request.setCharacterEncoding( "utf-8" );
-		
+
+		String type = request.getParameter( "type" );
+		System.out.println( type );
+
 		String email = request.getParameter( "email" );
 		System.out.println( email );
 		
